@@ -2,7 +2,7 @@ Windows Authentication strategy for Passport.js.
 
 ## Install
 
-    npm install passport-windowsauth
+    npm install passport-windowsauth-latest
 
 ## Introduction
 
@@ -29,7 +29,7 @@ If you want to use it with LDAP:
 
 ~~~javascript
 var passport = require('passport');
-var WindowsStrategy = require('passport-windowsauth');
+var WindowsStrategy = require('passport-windowsauth-latest');
 
 passport.use(new WindowsStrategy({
   ldap: {
@@ -49,7 +49,7 @@ If you want to use without LDAP:
 
 ~~~javascript
 var passport = require('passport');
-var WindowsStrategy = require('passport-windowsauth');
+var WindowsStrategy = require('passport-windowsauth-latest');
 
 passport.use(function(profile, done){
   User.findOrCreate({ waId: profile.id }, function (err, user) {
@@ -153,7 +153,7 @@ The modules you need are `mod-auth-kerb`, `proxy`, `proxy_http`, `headers`, `rew
 
 ~~~javascript
 var passport = require('passport');
-var WindowsStrategy = require('passport-windowsauth');
+var WindowsStrategy = require('passport-windowsauth-latest');
 
 passport.use(new WindowsStrategy({
   ldap: {
@@ -211,7 +211,7 @@ The same configuration as explained above is required with the ```integrated``` 
 
 ~~~javascript
 var passport = require('passport');
-var WindowsStrategy = require('passport-windowsauth');
+var WindowsStrategy = require('passport-windowsauth-latest');
 
 passport.use(new WindowsStrategy({
   ldap: {
